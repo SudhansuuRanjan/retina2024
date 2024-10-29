@@ -1,0 +1,121 @@
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 70vh;
+  width: 100%;
+}
+
+/* Main line */
+.line-right {
+  position: relative;
+  width: 30%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 5rem;
+  right: -10rem;
+}
+
+/* Glowing box effect */
+.line-right::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 200px;
+  height: 8px;
+  background-color: white;
+  transform: translateY(-50%);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+}
+
+/* Angled line */
+.line-right::after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  right: -13px;
+  width: 1px;
+  height: 35px;
+  background-color: white;
+  margin-top: 15px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+
+/* Main line */
+.line-left {
+  position: relative;
+  width: 30%;
+  height: 2px;
+  background-color: white;
+  margin-top: 5rem;
+  left: -10rem;
+}
+
+/* Glowing box effect */
+.line-left::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 200px;
+  height: 8px;
+  background-color: white;
+  transform: translateY(-50%);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+}
+
+/* Angled line */
+.line-left::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: -13px;
+  width: 1px;
+  height: 35px;
+  background-color: white;
+  margin-top: -15px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .timer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .line-right {
+    position: relative;
+    width: 30%;
+    margin-bottom: 5rem;
+    right: -5rem;
+  }
+
+  .line-right::before {
+    top: 50%;
+    right: 0;
+    width: 100px;
+    transform: translateY(-50%);
+  }
+
+  .line-left {
+    position: relative;
+    width: 30%;
+    margin-top: 5rem;
+    left: -5rem;
+  }
+
+  /* Glowing box effect */
+  .line-left::after {
+    top: 50%;
+    left: 0;
+    width: 100px;
+    transform: translateY(-50%);
+  }
+}

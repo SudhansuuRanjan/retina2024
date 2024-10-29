@@ -20,6 +20,7 @@
   line-height: 1;
   font-size: 7.5rem;
   font-weight: bold;
+  background-color: white;
   background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2JtOXRwdDAxZzh3c21vZzVsY21ndHZhNWh6a2t2bTlqdGh4bmJuMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1ZDxS5dYPYibkNmQQ9/giphy.webp') no-repeat center;
   background-size: cover;
   background-clip: text;
@@ -35,6 +36,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.hero-banner {
+  background: url('/banner.webp');
+  height: 100vh;
+  background-position: 0 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://ragam.co.in/noise_big.svg");
+  mix-blend-mode: screen;
+  opacity: 18%;
+  z-index: 5;
+  top: 0;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(180deg, transparent, #000);
+  background-size: 120% 100%;
+  z-index: 7;
 }
 
 
