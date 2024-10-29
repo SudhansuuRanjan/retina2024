@@ -24,8 +24,8 @@ const Timer = () => {
     }, [parsedDeadline, selectedDate]);
 
     return (
-        <div class="timer-container flex flex-col w-full">
-            <div class="line-right">
+        <div className="timer-container flex flex-col w-full">
+            <div className="line-right">
             </div>
 
             <div className="flex flex-col items-center justify-center lg:gap-10 md:gap-9 gap-8">
@@ -50,7 +50,7 @@ const Timer = () => {
                 </div>
             </div>
 
-            <div class="line-left">
+            <div className="line-left">
             </div>
         </div>
     )
