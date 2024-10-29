@@ -3,7 +3,7 @@ import PrimaryButton from '../Buttons/PrimaryButton'
 
 const Hero = () => {
     return (
-        <div className='bg-[url(banner.webp)]  h-screen w-full bg-center bg-cover'>
+        <div className='bg-[url("/banner.webp")]  h-screen w-full bg-center bg-cover'>
             <div className='fancyfont flex items-center justify-center flex-col pt-32'>
                 <h1 className='text-background text-center'>
                     Retina<br />7.0
