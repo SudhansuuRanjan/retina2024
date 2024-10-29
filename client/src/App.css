@@ -5,7 +5,7 @@
 /* Inside App.css or any other CSS file */
 @font-face {
   font-family: 'Pricedown BI';
-  src: url('./fonts/pricedown bl.otf') format('opentype');
+  src: url('/fonts/pricedown bl.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
