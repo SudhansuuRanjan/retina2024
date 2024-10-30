@@ -35,6 +35,15 @@
   color: transparent;
 }
 
+.text-footer-bg {
+  background-color: white;
+  background: url('/eye.gif') no-repeat center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .stylysed {
   font-family: 'Amatic SC';
 }

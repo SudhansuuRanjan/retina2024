@@ -85,8 +85,8 @@ const Footer = () => {
 
             <div className='lg:mt-[-0.5rem] md:mt-0 mt-5 pb-5'>
                 <div className='relative fancyfont  z-50 flex items-center justify-center flex-col'>
-                    <h1 className='text-center lg:text-[16rem] md:text-[10rem] text-[5rem]'>
-                        Retina <span className='text-yellow-500'> 7.0</span>
+                    <h1 className='text-center text-footer-bg lg:text-[16rem] md:text-[10rem] text-[5rem]'>
+                        Retina <span className=''> 7.0</span>
                     </h1>
                 </div>
                 {/* <img className='w-full px-10 py-20' src="/retina_lg.svg" alt="logo" /> */}
@@ -95,7 +95,7 @@ const Footer = () => {
             <div className='px-10 py-10'>
                 <div className='flex lg:flex-row md:flex-row flex-col items-center justify-between gap-2 text-gray-500'>
                     <p className='text-sm'>
-                        © 2024 AIIMS BHOPAL 7.0. All rights reserved.
+                        © 2024 AIIMS Bhopal. All rights reserved.
                     </p>
                     <p className='text-sm'>
                         Developed & Maintained by <a className='text-yellow-500 hover:text-gray-400' href=" ">EventBase.</a>
