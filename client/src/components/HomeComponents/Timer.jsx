@@ -7,7 +7,7 @@ const HOUR = MINUTE * 60;
 const DAY = HOUR * 24;
 
 const Timer = () => {
-    const [selectedDate, setSelectedDate] = useState("January, 3, 2025");
+    const [selectedDate, setSelectedDate] = useState("January, 15, 2025");
     const parsedDeadline = useMemo(
         () => Date.parse(selectedDate),
         [selectedDate]
