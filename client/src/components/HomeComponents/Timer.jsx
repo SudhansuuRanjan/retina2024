@@ -39,7 +39,7 @@ const Timer = () => {
                         <div key={label} className="flex items-center text-center">
                             <div className="text-center">
                                 <p className="lg:text-8xl md:text-7xl text-5xl fancyfont font-bold">{`${Math.floor(value)}`.padStart(2, "0")}</p>
-                                <span className="lg:text-base md:text-sm text-xs font-thin">{label}</span>
+                                <span className="lg:text-base md:text-sm text-xs font-thin dm-sans-regular">{label}</span>
                             </div>
 
                             {index < 3 && <span className="text-4xl text-yellow-500 -mt-5 lg:px-5 md:px-4 px-2">
