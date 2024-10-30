@@ -20,7 +20,7 @@ const Gallery = () => {
             </Marquee>
             </div>
 
-             <div className="rotate-[5deg]">
+             <div>
             <Marquee speed={100} direction="right" autoFill={true} pauseOnHover={true}>
                 <StyledImage src="https://picsum.photos/200/200?a=8" />
                 <StyledImage src="https://picsum.photos/200/200?a=9" />
