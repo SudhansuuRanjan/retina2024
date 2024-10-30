@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../../components/HomeComponents/Hero'
 import Timer from '../../components/HomeComponents/Timer'
 import Events from '../../components/HomeComponents/Events/Events'
+import Gallery from '../../components/HomeComponents/Gallery'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Timer />
       <Events />
+      <Gallery />
     </div>
   )
 }
