@@ -1,4 +1,4 @@
-import "./StyledImage.css"
+
 
 const StyledImage = ({ src }) => {
     return (
@@ -11,33 +11,33 @@ const StyledImage = ({ src }) => {
         // </div>
         <div>
             <div className="flex gap-2 justify-between items-center p-1">
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
             </div>
-            <img src={`${src ? src : "https://picsum.photos/200/200?a=12"}`} alt="Image" class="h-56 hover:scale-105 transition cursor-pointer my-2 mx-2" />
+            <img src={`${src ? src : "https://picsum.photos/200/200?a=12"}`} alt="Image" class="lg:h-56 md:h-52 h-44 hover:scale-105 transition cursor-pointer my-2 mx-2" />
             <div className="flex gap-2 justify-between items-center p-1">
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
-                <div className="size-2.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
+                <div className="lg:size-2.5 md:size-2.5 size-1.5 rounded-sm bg-white"></div>
             </div>
         </div>
 
