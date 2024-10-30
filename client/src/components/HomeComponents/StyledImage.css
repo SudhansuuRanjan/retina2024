@@ -1,0 +1,57 @@
+/* Styling for the wrapper to center the image */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Rounded Image Styling */
+.rounded-image {
+  border-radius: 10%;
+  width: 200px; /* Set your desired size */
+  height: 200px;
+  display: block;
+}
+
+/* Dots Styling */
+.image-wrapper::before,
+.image-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 7px; /* Size of the dot */
+  height: 7px;
+  background-color: white; /* Color of the dot */
+}
+
+/* Top-Left Dot */
+.image-wrapper::before {
+  top: -5px;
+  left: -5px;
+}
+
+/* Bottom-Right Dot */
+.image-wrapper::after {
+  bottom: -5px;
+  right: -5px;
+}
+
+/* Additional Dots for Top-Right and Bottom-Left */
+.image-wrapper .top-right,
+.image-wrapper .bottom-left {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+}
+
+/* Top-Right Dot */
+.image-wrapper .top-right {
+  top: -5px;
+  right: -5px;
+}
+
+/* Bottom-Left Dot */
+.image-wrapper .bottom-left {
+  bottom: -5px;
+  left: -5px;
+}
