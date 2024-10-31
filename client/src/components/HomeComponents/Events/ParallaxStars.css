@@ -1,8 +1,21 @@
 .stars-container {
-    height: 100vh;
+    height: 120vh;
     background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
     overflow: hidden;
     position: relative;
+}
+
+/* Hide scrollbar but allow scrolling */
+.scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 1rem 0;
+    scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
 }
 
 #stars,
@@ -22,7 +35,7 @@
 #stars {
     width: 1px;
     height: 1px;
-   
+
     animation: animStar 50s linear infinite;
 }
 
@@ -30,7 +43,7 @@
 #stars2 {
     width: 2px;
     height: 2px;
-    
+
     animation: animStar 100s linear infinite;
 }
 
@@ -41,8 +54,33 @@
     animation: animStar 150s linear infinite;
 }
 
+#event_container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.corner-cut-image {
+    overflow: hidden;
+    /* Hide the overflow to make the clip-path effective */
+}
+
+.img-slider-slide{
+    transition: all 300ms ease-in-out;
+}
+
+.corner-cut-image img {
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+
+
 /* Title Style */
-#title {
+/* #title {
     position: absolute;
     top: 50%;
     left: 0;
@@ -61,7 +99,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 /* Keyframe Animation */
 @keyframes animStar {
