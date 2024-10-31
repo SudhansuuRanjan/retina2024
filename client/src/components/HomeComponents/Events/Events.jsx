@@ -76,7 +76,7 @@ export default Events;
 
 const EventSlider = ({ events }) => {
     const [cardIndex, setCardIndex] = useState(0);
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(true);
 
     // Auto play
 
@@ -128,7 +128,7 @@ const EventSlider = ({ events }) => {
                         <FaArrowLeft size={24} />
                     </button>
                     <button onClick={() => {
-                        if (cardIndex === 6) return;
+                        if (cardIndex === 5) setCardIndex(0);
                         else setCardIndex(cardIndex + 1);
                     }} className='text-yellow-500 px-5 py-3 border border-white active:bg-white active:text-black'>
                         <FaArrowRight size={24} />
